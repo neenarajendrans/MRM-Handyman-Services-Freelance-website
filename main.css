@@ -1,0 +1,310 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.home-section {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+#nav {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05); /* subtle transparent glass look */
+  border-bottom: 1px solid rgba(78, 77, 77, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-text {
+  font-family: "Arima", cursive;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: black;
+}
+nav ul {
+  margin-left: 300px;
+  margin-right: 80px;
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  align-items: center;
+  font-family: "PT Serif", serif;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: rgb(67, 64, 64);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #059753;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+
+  /* background: linear-gradient(to bottom right, #a8e6cf, #dcedc1); */
+}
+/* Hero Section */
+.hero {
+  margin-top: 100px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 80px;
+  gap: 0.3em;
+}
+.hero img {
+  margin-top: -55px;
+  width: 550px; /* adjust as needed */
+  height: auto;
+  opacity: 0;
+  transform: translateY(80px);
+  animation: slideInUp 1s ease-out 0.3s forwards;
+}
+.hero-content {
+  max-width: 1200px;
+  margin-top: 150px;
+  padding: 2rem 2rem;
+  opacity: 0;
+  transform: translateY(80px);
+  animation: slideInUp 1s ease-out 0.3s forwards;
+}
+/* Animations */
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-content h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 0.8;
+}
+
+.hero-content h1 .highlight {
+  color: #666868;
+  font-size: 4rem;
+}
+.hero-content h1 .statement {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: left;
+}
+
+.btn-primary {
+  margin-top: 30px;
+  background: #66b971cc;
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0f9d8e;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  padding: 1rem 2.5rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #2c3e50;
+}
+
+/* About Section */
+.about-section {
+  margin-top: 30px;
+  padding: 80px 2rem;
+
+  padding-top: 140px;
+  background: white;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-content h3 {
+  margin-top: -100px;
+  color: green;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.about-content p {
+  color: #64748b;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+
+/* Services Section */
+.services-section {
+  margin-top: 30px;
+  padding: 80px 2rem;
+   padding-top: 110px; 
+  background: #f8fafc;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h3 {
+  color: green;
+  font-size: 2.8rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.service-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #14b8a6;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.8rem;
+}
+
+.service-content {
+  padding: 2rem;
+}
+
+.service-content h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.service-content p {
+  color: #64748b;
+  line-height: 1.8;
+}
