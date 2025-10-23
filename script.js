@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 1024) {
                 navLinks.classList.remove('active');
                 hamburger.textContent = '☰';
             }
