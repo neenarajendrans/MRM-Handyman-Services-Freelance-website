@@ -36,3 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+  // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            this.reset();
+           
+        });
