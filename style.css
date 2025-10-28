@@ -113,14 +113,14 @@ nav a:hover {
   flex-direction: row;
   justify-content: flex-start;
   gap: 0.3em;
-  background-image: url("images/try1.png");
+  background-image: url("images/bgg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .hero img {
   margin-top: -55px;
-  width: 550px; /* adjust as needed */
+  width: 500px; /* adjust as needed */
   height: auto;
   opacity: 0;
   transform: translateY(80px);
@@ -129,6 +129,7 @@ nav a:hover {
 .hero-content {
   max-width: 1200px;
   margin-top: 150px;
+  margin-left: 50px;
   padding: 2rem 2rem;
   opacity: 0;
   transform: translateY(80px);
@@ -152,7 +153,7 @@ nav a:hover {
   font-size: 5.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 
 .hero-content h1 .highlight {
@@ -160,8 +161,9 @@ nav a:hover {
   font-size: 4rem;
 }
 .hero-content h1 .statement {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 200;
+  font-family: "latin", sans-serif;
   margin-bottom: 2.5rem;
   max-width: 800px;
   margin-left: auto;
@@ -229,7 +231,6 @@ nav a:hover {
 }
 
 .about-content h3 {
-  margin-top: -100px;
   color: green;
   font-size: 2.8rem;
   margin-bottom: 1rem;
@@ -947,7 +948,7 @@ footer {
   color: black;
   padding: 60px 1.5rem 30px;
 }
- .footer-logo-image {
+.footer-logo-image {
   font-family: "Arima", cursive;
   font-size: 2rem;
   font-weight: 600;
@@ -1134,8 +1135,7 @@ footer {
 
   .hero {
     padding-top: 100px;
-    flex-direction: column;
-    align-items: center;
+
     text-align: center;
   }
 
@@ -1145,6 +1145,7 @@ footer {
 
   .hero-content {
     margin-top: 50px;
+    margin-left: 0;
   }
 
   .hero-content h1 {
@@ -1248,6 +1249,10 @@ footer {
     padding-top: 80px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero img {
@@ -1257,18 +1262,22 @@ footer {
   .hero-content {
     padding: 1.5rem 1rem;
     margin-top: 30px;
+    margin-left: 0;
   }
 
   .hero-content h1 {
     font-size: 3.5rem;
+    text-align: center;
   }
 
   .hero-content h1 .highlight {
     font-size: 2.8rem;
+    text-align: center;
   }
 
   .hero-content h1 .statement {
     font-size: 1.3rem;
+    text-align: center;
   }
 
   .hero-buttons {
@@ -1279,6 +1288,7 @@ footer {
 
   .btn-primary,
   .btn-secondary {
+    align-items: center;
     width: 100%;
     max-width: 300px;
   }
@@ -1392,6 +1402,7 @@ footer {
   .hero-content {
     padding: 1rem;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .hero-content h1 {
@@ -1565,13 +1576,19 @@ footer {
   .logo img {
     width: 150px;
   }
-
+  .hero-content {
+    padding: 1rem;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
   .hero img {
     width: 250px;
   }
 
   .hero-content h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .hero-content h1 .highlight {
