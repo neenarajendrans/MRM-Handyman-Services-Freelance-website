@@ -353,18 +353,20 @@
                     </div>
                 </div>
             </div>
-            <form class="contact-form">
+            <form id="my-form" class="contact-form"  action="https://formspree.io/f/xanlekbj"
+  method="POST">
                 <div class="form-row">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="form-row">
-                    <input type="tel" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
                 </div>
-                <textarea placeholder="Your Message" id="messageArea"></textarea>
+                <textarea name="message" placeholder="Your Message" id="messageArea"></textarea>
              
-                <button type="submit" class="submit-btn">Submit Now</button>
+                <button class="submit-btn" type="submit" id="my-form-button">Submit Now</button>
+                <p id="my-form-status"></p>
             </form>
         </div>
     </section>
